@@ -2,7 +2,7 @@ FROM golang:alpine
 
 # RUN apk update && apk add --no-cache git
 WORKDIR /app
-COPY /Praktikum .
+COPY . .
 RUN go mod tidy
 RUN go build -o bin 
 ENTRYPOINT [ "/app/bin" ]

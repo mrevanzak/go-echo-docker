@@ -17,7 +17,7 @@ services:
 
   go:
     container_name: api
-    image: ilhamfzz/dockerize-golang-altera
+    image: testgo.azurecr.io/go-echo-docker:v1
     ports:
       - "8080:8080"
     restart: always
